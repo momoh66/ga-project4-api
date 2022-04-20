@@ -1,0 +1,28 @@
+[
+{
+  "model": "students.student",
+  "pk": 1,
+  "fields": {
+    "first_name": "Iman",
+    "surname": "Mohamed",
+    "date_of_birth": "2004-09-24",
+    "admission_date": "2022-04-15",
+    "image": "sd",
+    "year_group": 12,
+    "sex": "Male"
+  }
+},
+{
+  "model": "students.student",
+  "pk": 2,
+  "fields": {
+    "first_name": "fgngf",
+    "surname": "gdfg",
+    "date_of_birth": "2022-04-15",
+    "admission_date": "2022-04-15",
+    "image": "gg",
+    "year_group": 7,
+    "sex": "gdg"
+  }
+}
+]

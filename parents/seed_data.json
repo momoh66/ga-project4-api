@@ -1,0 +1,32 @@
+[
+{
+  "model": "parents.parent",
+  "pk": 3,
+  "fields": {
+    "first_name": "Huseen",
+    "surname": "Abuu",
+    "image": "",
+    "students": []
+  }
+},
+{
+  "model": "parents.parent",
+  "pk": 4,
+  "fields": {
+    "first_name": "Ubah",
+    "surname": "Ahmed",
+    "image": "",
+    "students": []
+  }
+},
+{
+  "model": "parents.parent",
+  "pk": 5,
+  "fields": {
+    "first_name": "Asiya",
+    "surname": "Saeed",
+    "image": "",
+    "students": []
+  }
+}
+]

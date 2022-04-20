@@ -1,0 +1,32 @@
+[
+{
+  "model": "teachers.teacher",
+  "pk": 1,
+  "fields": {
+    "first_name": "Julie",
+    "surname": "Pardoe",
+    "image": "sddas",
+    "subject": "Maths"
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 2,
+  "fields": {
+    "first_name": "David",
+    "surname": "Kubenk",
+    "image": "dsdf",
+    "subject": "Science"
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 3,
+  "fields": {
+    "first_name": "Matthew",
+    "surname": "Collins",
+    "image": "SDAdsf",
+    "subject": "English"
+  }
+}
+]
