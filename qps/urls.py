@@ -24,5 +24,7 @@ urlpatterns = [
     path('', include('teachers.urls')),
     path('', include('messaging.urls')),
     path('', include('payment.urls')),
-    path('', include("jwt_auth.urls")),
+    path('', include('jwt_auth.urls')),
+    path('api-login', include('rest_framework.urls')),
+
 ]

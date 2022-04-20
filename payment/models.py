@@ -13,5 +13,5 @@ class Payment(models.Model):
     basket = models.ForeignKey(
         Basket, related_name='payments',  on_delete=models.CASCADE, null=True)
 
-    def __int__(self):
-        return self.student
+    def __str__(self):
+        return self.parent

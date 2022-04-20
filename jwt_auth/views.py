@@ -10,7 +10,7 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 from .serializers import UserSerializer
-from rest_framework.permissions import IsAuthenticated
+
 User = get_user_model()
 
 
@@ -49,8 +49,6 @@ class LoginView(APIView):
 
 
 class CredentialsView(APIView):
-
-    permission_classes = [IsAuthenticated, ]
 
     def get(self, request):
         serializer = UserSerializer(request.user)

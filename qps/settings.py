@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if ENV == 'DEV':
-    SECRET_KEY = 'django-insecure-*076p5a7vp4pmmchs5$7$=l-&o#*3xpgk2sd2ayg1^bh)26q1w'
+    SECRET_KEY = 'kf5j_%ii)+wng3mjb1_g3n-!-k3%w86b6nhm&+pxn%f2ye4b@u'
 else:
     SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
@@ -161,6 +161,9 @@ REST_FRAMEWORK = {
     # 'DEFAULT_AUTHENTICATION_CLASSES': [
     #     'jwt_auth.authentication.JWTAuthentication',
     # ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
 }
 
 AUTH_USER_MODEL = 'jwt_auth.CustomUser'
@@ -170,8 +173,8 @@ django_on_heroku.settings(locals())
 
 # CSRF_TRUSTED_ORIGINS = ['https://bookstore-ga1.herokuapp.com']
 
-STRIPE_SECRET_KEY='sk_test_51KpjrlCWyX5zrgAXCyshso9X4hV0CqllcTJCq0WPdjhcnnrV2RHCBluIf73FFZdLIwXUZpPsQmyglwuIpOKay24900Vm5wUojw'
+STRIPE_SECRET_KEY = 'sk_test_51KpjrlCWyX5zrgAXCyshso9X4hV0CqllcTJCq0WPdjhcnnrV2RHCBluIf73FFZdLIwXUZpPsQmyglwuIpOKay24900Vm5wUojw'
 if ENV != 'DEV':
-    SITE_URL='http://localhost:3010'
+    SITE_URL = 'http://localhost:3010'
 else:
-    SITE_URL='http://localhost:3010'
+    SITE_URL = 'http://localhost:3010'
