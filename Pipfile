@@ -12,6 +12,7 @@ python-dotenv = "*"
 django-cors-headers = "*"
 django-on-heroku = "*"
 pyjwt = "*"
+stripe = "*"
 
 [dev-packages]
 autopep8 = "*"
