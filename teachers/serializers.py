@@ -1,6 +1,6 @@
 from dataclasses import field
 from rest_framework import serializers
-from students.serializers import StudentSerializer
+from messaging.serializers import MessagingSerializer
 from .models import Teacher
 
 
@@ -10,3 +10,5 @@ class TeacherSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
 
+class TeacherPopulatedSerializerWithMessages(TeacherSerializer):
+    messages = MessagingSerializer(many=True)

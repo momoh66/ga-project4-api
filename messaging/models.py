@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 from parents.models import Parent
+from teachers.models import Teacher
 User = get_user_model()
 # Create your models here.
 
@@ -8,7 +9,7 @@ User = get_user_model()
 class Message(models.Model):
     text = models.CharField(max_length=300)
     owner = models.ForeignKey(
-        User, related_name='messages', on_delete=models.PROTECT)
+        Teacher, related_name='messages', on_delete=models.PROTECT)
     recipient_parent = models.ForeignKey(
         Parent, related_name='messages', on_delete=models.PROTECT)
     created_at = models.DateTimeField(auto_now_add=True)

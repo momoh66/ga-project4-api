@@ -1,11 +1,11 @@
-from django.contrib import admin
-from .models import *
+# from django.contrib import admin
+# from .models import *
 
-# Register your models here.
-
-
-class PaymentAdmin(admin.ModelAdmin):
-    list_display = ('parent', 'amount', 'basket', 'id',)
+# # Register your models here.
 
 
-admin.site.register(Payment, PaymentAdmin)
+# class PaymentAdmin(admin.ModelAdmin):
+#     list_display = ('email',)
+
+
+# admin.site.register(Payment, PaymentAdmin)

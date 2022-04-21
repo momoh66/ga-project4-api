@@ -1,31 +1,51 @@
 from django.conf import settings
 from rest_framework.views import APIView
+from rest_framework.generics import *
 from rest_framework.response import Response
-
+from basket.models import Basket
 from rest_framework import status
 from django.shortcuts import redirect
+from rest_framework.permissions import IsAuthenticated
+# from .models import Payment
+from .serializers import *
 import stripe
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
-class StripeCheckoutView(APIView):
+class StripeListView(APIView):
+    def get(self, request, *args, **kw):
+        return Response(stripe.PaymentIntent.list(limit=10))
 
-    def post(self, request):
+
+class StripeCheckoutView(APIView):
+    # queryset = Payment.objects.all()
+    # serializer_class = PaymentSerializer
+    permission_classes = [IsAuthenticated, ]
+
+    def post(self, request, *args, **kwargs):
+        print(f'SELF:{self}, REQUEST: {request}, ARGS:{args}, KWARGS:{kwargs}')
+        basket_id=self.kwargs['pk']
+        basket=Basket.objects.get(pk = basket_id)
         try:
-            checkout_session = stripe.checkout.Session.create(
-                line_items=[
+            checkout_session=stripe.checkout.Session.create(
+                line_items = [
                     {
-                        # Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-                        'price': 'price_1Kpqd0CWyX5zrgAXrnYlOiyr',
+                        'price_data': {
+                            'currency': 'gbp',
+                            'unit_amount': basket.amount,
+                            'product_data': {
+                                'name': basket.name,
+                            },
+                        },
                         'quantity': 1,
                     },
                 ],
-                payment_method_types=['card', ],
-                mode='payment',
-                success_url=settings.SITE_URL + \
+                payment_method_types = ['card', ],
+                mode = 'payment',
+                success_url = settings.SITE_URL +
                 '?success=true&={CHECKOUT_SESSION_ID}',
-                cancel_url=settings.SITE_URL + '?canceled=true',
+                cancel_url = settings.SITE_URL + '?canceled=true',
             )
             return redirect(checkout_session.url)
 

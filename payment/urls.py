@@ -3,5 +3,7 @@ from .views import *
 
 urlpatterns = [
    
-    path('stripe-payments/', StripeCheckoutView.as_view()),
+    path('v1/payment_intents', StripeListView.as_view()),
+    path('stripe-payments/<pk>', StripeCheckoutView.as_view()),
+
 ]

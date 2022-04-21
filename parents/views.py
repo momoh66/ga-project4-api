@@ -12,7 +12,8 @@ class ParentList(ListCreateAPIView):
     serializer_class = ParentSerializer
 
 
-class ParentWithStudentView(RetrieveAPIView):
+
+class ParentDetailedView(RetrieveAPIView):
 
     queryset = Parent.objects.all()
     serializer_class = ParentPopulatedSerializer

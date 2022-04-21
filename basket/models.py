@@ -12,5 +12,5 @@ class Basket(models.Model):
     student = models.ManyToManyField(
         Student, related_name='baskets', blank=True)
 
-    def __int__(self):
-        return self.student
+    def __str__(self):
+        return  f'Bakset Id: {self.id}'
