@@ -167,8 +167,7 @@ AUTH_USER_MODEL = 'jwt_auth.CustomUser'
 
 
 django_on_heroku.settings(locals())
-
-# CSRF_TRUSTED_ORIGINS = ['https://bookstore-ga1.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://qprivateschoolpayment.herokuapp.com/']
 
 STRIPE_SECRET_KEY = 'sk_test_51KpjrlCWyX5zrgAXCyshso9X4hV0CqllcTJCq0WPdjhcnnrV2RHCBluIf73FFZdLIwXUZpPsQmyglwuIpOKay24900Vm5wUojw'
 if ENV != 'DEV':

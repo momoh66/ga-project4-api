@@ -1,0 +1,196 @@
+[
+{
+  "model": "students.student",
+  "pk": 2,
+  "fields": {
+    "User": null,
+    "first_name": "Amy",
+    "surname": "Winehouse",
+    "date_of_birth": "1998-04-15",
+    "admission_date": "2022-04-17",
+    "image": "asdsf",
+    "year_group": 7,
+    "sex": "Female",
+    "paid": true,
+    "parent": []
+  }
+},
+{
+  "model": "students.student",
+  "pk": 3,
+  "fields": {
+    "User": null,
+    "first_name": "Yacob",
+    "surname": "Mahmoud",
+    "date_of_birth": "1998-01-11",
+    "admission_date": "2022-04-19",
+    "image": "dssd",
+    "year_group": 13,
+    "sex": "Male",
+    "paid": true,
+    "parent": [
+      8
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 5,
+  "fields": {
+    "User": null,
+    "first_name": "Jamie",
+    "surname": "Carrick",
+    "date_of_birth": "1999-12-11",
+    "admission_date": "2022-04-19",
+    "image": "xadas",
+    "year_group": 12,
+    "sex": "Male",
+    "paid": false,
+    "parent": [
+      6
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 6,
+  "fields": {
+    "User": null,
+    "first_name": "Shashe",
+    "surname": "Mohamed",
+    "date_of_birth": "2004-09-24",
+    "admission_date": "2022-04-19",
+    "image": "fsf",
+    "year_group": 10,
+    "sex": "Female",
+    "paid": false,
+    "parent": [
+      3
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 7,
+  "fields": {
+    "User": null,
+    "first_name": "Aisha",
+    "surname": "Capone",
+    "date_of_birth": "2002-12-12",
+    "admission_date": "2022-04-19",
+    "image": "dasd",
+    "year_group": 10,
+    "sex": "Female",
+    "paid": false,
+    "parent": [
+      7
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 8,
+  "fields": {
+    "User": null,
+    "first_name": "Faiza",
+    "surname": "Capone",
+    "date_of_birth": "2006-12-23",
+    "admission_date": "2022-04-19",
+    "image": "sadfsf",
+    "year_group": 12,
+    "sex": "Female",
+    "paid": false,
+    "parent": [
+      6
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 9,
+  "fields": {
+    "User": null,
+    "first_name": "Tristan",
+    "surname": "Hall",
+    "date_of_birth": "1984-12-30",
+    "admission_date": "2022-04-20",
+    "image": "sss",
+    "year_group": 12,
+    "sex": "male",
+    "paid": false,
+    "parent": [
+      1
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 10,
+  "fields": {
+    "User": 118,
+    "first_name": "Tristan",
+    "surname": "Hall",
+    "date_of_birth": "1984-12-30",
+    "admission_date": "2022-04-21",
+    "image": "sss",
+    "year_group": 12,
+    "sex": "male",
+    "paid": false,
+    "parent": [
+      3
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 11,
+  "fields": {
+    "User": null,
+    "first_name": "Tristan",
+    "surname": "Hall",
+    "date_of_birth": "1984-12-30",
+    "admission_date": "2022-04-20",
+    "image": "sss",
+    "year_group": 12,
+    "sex": "male",
+    "paid": false,
+    "parent": [
+      1
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 12,
+  "fields": {
+    "User": null,
+    "first_name": "Tristan",
+    "surname": "Hall",
+    "date_of_birth": "1984-12-30",
+    "admission_date": "2022-04-20",
+    "image": "sss",
+    "year_group": 12,
+    "sex": "male",
+    "paid": false,
+    "parent": [
+      1
+    ]
+  }
+},
+{
+  "model": "students.student",
+  "pk": 26,
+  "fields": {
+    "User": 117,
+    "first_name": "Simon",
+    "surname": "Cowell",
+    "date_of_birth": "1984-12-30",
+    "admission_date": "2022-04-21",
+    "image": "",
+    "year_group": 12,
+    "sex": "Male",
+    "paid": false,
+    "parent": []
+  }
+}
+]

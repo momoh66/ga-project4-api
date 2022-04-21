@@ -1,0 +1,49 @@
+[
+{
+  "model": "basket.basket",
+  "pk": 1,
+  "fields": {
+    "name": "TRIP - Science museum",
+    "amount": 12000,
+    "student": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      26
+    ]
+  }
+},
+{
+  "model": "basket.basket",
+  "pk": 10,
+  "fields": {
+    "name": "School Fees",
+    "amount": 3250,
+    "student": [
+      9,
+      11
+    ]
+  }
+},
+{
+  "model": "basket.basket",
+  "pk": 11,
+  "fields": {
+    "name": "School Fees",
+    "amount": 1250,
+    "student": [
+      12,
+      9,
+      10,
+      11
+    ]
+  }
+}
+]

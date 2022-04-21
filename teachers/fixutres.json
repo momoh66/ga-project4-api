@@ -1,0 +1,79 @@
+[
+{
+  "model": "teachers.teacher",
+  "pk": 1,
+  "fields": {
+    "User": null,
+    "first_name": "Rafael",
+    "surname": "Nadal",
+    "image": "12dd",
+    "subject": "Citizenship",
+    "student": []
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 2,
+  "fields": {
+    "User": null,
+    "first_name": "David",
+    "surname": "Kubenk",
+    "image": "dsdf",
+    "subject": "Science",
+    "student": []
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 3,
+  "fields": {
+    "User": null,
+    "first_name": "Matthew",
+    "surname": "Collins",
+    "image": "SDAdsf",
+    "subject": "English",
+    "student": [
+      5
+    ]
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 4,
+  "fields": {
+    "User": null,
+    "first_name": "Roger",
+    "surname": "Federer",
+    "image": "12",
+    "subject": "PE",
+    "student": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 5,
+  "fields": {
+    "User": null,
+    "first_name": "Rafael",
+    "surname": "Nadal",
+    "image": "12dd",
+    "subject": "PE",
+    "student": []
+  }
+},
+{
+  "model": "teachers.teacher",
+  "pk": 6,
+  "fields": {
+    "User": 120,
+    "first_name": "Bulma",
+    "surname": "Tailwind",
+    "image": null,
+    "subject": "Comprehension",
+    "student": []
+  }
+}
+]
