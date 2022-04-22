@@ -14,13 +14,13 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 class StripeListView(APIView):
+    permission_classes = (IsAuthenticated,)
     def get(self, request, *args, **kw):
         return Response(stripe.PaymentIntent.list(limit=10))
 
 
 class StripeCheckoutView(APIView):
-    # queryset = Payment.objects.all()
-    # serializer_class = PaymentSerializer
+    
     permission_classes = [IsAuthenticated, ]
 
     def post(self, request, *args, **kwargs):
